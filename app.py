@@ -4,7 +4,7 @@ import dash_bootstrap_components as dbc
 import time
 
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
-
+server = app.server
 def check_parentheses(s: str):
     """
     Check if parentheses are balanced and return step-by-step info
